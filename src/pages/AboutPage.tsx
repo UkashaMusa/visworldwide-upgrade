@@ -8,29 +8,24 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'John Doe',
+      name: 'Anass Aboubakar Ousmane',
       role: 'Founder & CEO',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'John has over 15 years of experience in international business and tourism across Africa.',
+      bio: 'Anass has over 15 years of experience in international business and tourism across Africa.',
     },
     {
-      name: 'Sarah Kimani',
+      name: 'Musa Ukasha',
       role: 'Investment Director',
       image: 'https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Sarah specializes in facilitating investments in emerging markets with a focus on sustainable development.',
+      bio: 'Ukasha specializes in facilitating investments in emerging markets with a focus on sustainable development.',
     },
     {
-      name: 'Michael Okafor',
+      name: 'Muhammad Auwal Y',
       role: 'Education Consultant',
       image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Michael has helped hundreds of students navigate international education opportunities.',
+      bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
     },
-    {
-      name: 'Amina Diallo',
-      role: 'Travel Experience Manager',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Amina creates unforgettable travel experiences that showcase the best of African culture and landscapes.',
-    },
+   
   ];
 
   return (
@@ -39,7 +34,7 @@ const AboutPage = () => {
       <section className="bg-gradient-to-r from-indigo-300 via-blue-300 to-indigo-300 pt-32 pb-16 bg-neutral-50">
         <div className="container ">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="mb-4">About VisAfrica</h1>
+            <h1 className="mb-4">About Visworldwide</h1>
             <p className="text-xl text-neutral-600">
               Your trusted partner for exploring opportunities across Africa through travel, investment, and education.
             </p>
@@ -58,7 +53,7 @@ const AboutPage = () => {
             >
               <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
               <p className="text-neutral-600 mb-4">
-                VisAfrica was founded in 2020 with a vision to connect the world to the vast opportunities that Africa offers. What began as a small travel agency has evolved into a comprehensive service provider facilitating travel, investment, and education across the continent.
+                Visworldwide was founded in 2020 with a vision to connect the world to the vast opportunities that Africa offers. What began as a small travel agency has evolved into a comprehensive service provider facilitating travel, investment, and education across the continent.
               </p>
               <p className="text-neutral-600 mb-4">
                 Our founder's extensive experience in international business and passion for showcasing Africa's potential led to the creation of a platform that breaks down barriers and opens doors for individuals and organizations looking to engage with African countries.
@@ -75,8 +70,8 @@ const AboutPage = () => {
               className="rounded-xl overflow-hidden"
             >
               <img 
-                src="https://images.pexels.com/photos/3760517/pexels-photo-3760517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="VisAfrica team" 
+                src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                alt="Visworldwide team" 
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -150,8 +145,8 @@ const AboutPage = () => {
             title="Meet Our Team"
             subtitle="The passionate professionals behind VisAfrica"
           />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 */}
+          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 p-4 sm:p-6 lg:p-8">
             {teamMembers.map((member, index) => (
               <motion.div 
                 key={index}

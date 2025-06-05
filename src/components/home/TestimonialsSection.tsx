@@ -13,7 +13,6 @@ const TestimonialsSection = () => {
       id: 1,
       name: 'David Johnson',
       role: 'Tourist from USA',
-      image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       quote: 'My safari experience with VisAfrica exceeded all expectations. The guides were knowledgeable, the accommodations were comfortable, and the wildlife sightings were incredible!',
       rating: 5,
       type: 'visit',
@@ -22,7 +21,6 @@ const TestimonialsSection = () => {
       id: 2,
       name: 'Sarah Chen',
       role: 'Business Owner',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       quote: 'VisAfrica helped my company establish operations in Kenya with minimal hassle. Their market insights and legal support were invaluable for our successful expansion.',
       rating: 5,
       type: 'invest',
@@ -31,7 +29,6 @@ const TestimonialsSection = () => {
       id: 3,
       name: 'Michael Okafor',
       role: 'International Student',
-      image: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       quote: 'Thanks to VisAfrica, I was able to secure a scholarship at a top university in South Africa. Their support with visa applications and accommodation made my transition smooth.',
       rating: 5,
       type: 'study',
@@ -92,13 +89,6 @@ const TestimonialsSection = () => {
                   transition={{ duration: 0.5 }}
                 >
                   <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                    <div className="w-20 h-20 md:w-24 md:h-24 rounded-full overflow-hidden flex-shrink-0 border-2 border-primary-200">
-                      <img 
-                        src={testimonial.image} 
-                        alt={testimonial.name} 
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
                     
                     <div>
                       <div className="flex text-yellow-400 mb-2">

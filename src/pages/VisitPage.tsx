@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import SectionTitle from '../components/common/SectionTitle';
 import PackageCard from '../components/common/PackageCard';
 import { MapPin } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const VisitPage = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Serengeti Wildlife Safari',
       location: 'Tanzania',
-      duration: '7 Days',
+      duration: 'Embark on an unforgettable journey through Tanzania\'Serengeti National Park. Witness the Big Five, experience the Great Migration, and enjoy breathtaking landscapes with expert guides and luxury safari camps.',
       groupSize: '2-12 People',
       price: '$1,999',
       link: '/visit/serengeti-safari',
@@ -24,7 +25,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Cape Town City Experience',
       location: 'South Africa',
-      duration: '5 Days',
+      duration: 'Discover the charm of South African\'s Mother city. Explore Table Mountain, the V&A waterfront, and vibrant local culture with guided tours and scenic coastal drives. ',
       groupSize: '2-8 People',
       price: '$1,499',
       link: '/visit/cape-town',
@@ -35,7 +36,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Marrakech Cultural Tour',
       location: 'Morocco',
-      duration: '6 Days',
+      duration: 'Step into the heart of Morocco with this rich cultural tour. Wander bustling souks, visit historic palaces, and experience authentic Moroccan cuisine and traditions.',
       groupSize: '2-10 People',
       price: '$1,299',
       link: '/visit/marrakech',
@@ -46,7 +47,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/631317/pexels-photo-631317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Victoria Falls Adventure',
       location: 'Zimbabwe & Zambia',
-      duration: '6 Days',
+      duration: 'Experience the awe of victoria Falls on the border of Zimbabwe and Zambia. Enjoy guided nature walks, river cruises, and thrilling activities near the mighty falls. ',
       groupSize: '2-10 People',
       price: '$1,799',
       link: '/visit/victoria-falls',
@@ -57,7 +58,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/3250613/pexels-photo-3250613.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Zanzibar Beach Getaway',
       location: 'Tanzania',
-      duration: '5 Days',
+      duration: 'Rela on Tanzania\'s exotic island paradise. Soak up the sun on white-sand beaches,swim in crystal waters, and explore Stone Town\'s unique culture and history.',
       groupSize: '2-6 People',
       price: '$1,399',
       link: '/visit/zanzibar',
@@ -68,7 +69,7 @@ const VisitPage = () => {
       image: 'https://images.pexels.com/photos/33041/antelope-canyon-lower-canyon-arizona.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Egyptian Pyramids & Nile Cruise',
       location: 'Egypt',
-      duration: '8 Days',
+      duration: 'Uncover ancient wonders in Egypt. Visit the Great Pyramids of Giza, then sail the Nile River in style, exploring temples and treasures of the Pharaohs along the way.',
       groupSize: '2-16 People',
       price: '$2,199',
       link: '/visit/egypt',
@@ -147,8 +148,9 @@ const VisitPage = () => {
               <p className="text-neutral-600">{t('visit.packages.city.description')}</p>
             </motion.div>
           </div>
-          
+          <Link to='/contact'>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
             {packages.map((pkg) => (
               <PackageCard 
                 key={pkg.id}
@@ -161,8 +163,9 @@ const VisitPage = () => {
                 link={pkg.link}
                 featured={pkg.featured}
               />
-            ))}
+            ))}       
           </div>
+           </Link>
         </div>
       </section>
     </>

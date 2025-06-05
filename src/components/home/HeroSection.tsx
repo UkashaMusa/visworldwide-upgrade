@@ -51,7 +51,7 @@ const HeroSection = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, y: [0, 10, 0] }}
         transition={{ delay: 1, duration: 1.5, repeat: Infinity }}
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white flex flex-col items-center"
+        className="absolute hidden  bottom-10 left-1/2 transform -translate-x-1/2 text-white md:flex flex-col items-center"
       >
         <span className="mb-2 text-sm font-medium">Scroll Down</span>
         <ArrowRight size={20} className="transform rotate-90" />

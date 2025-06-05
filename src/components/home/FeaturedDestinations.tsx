@@ -13,18 +13,18 @@ const FeaturedDestinations = () => {
       image: 'https://images.pexels.com/photos/70441/pexels-photo-70441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Serengeti Wildlife Safari',
       location: 'Tanzania',
-      duration: '7 Days',
+      duration: 'Embark on an unforgettable journey through Tanzania\'Serengeti National Park. Witness the Big Five, experience the Great Migration, and enjoy breathtaking landscapes with expert guides and luxury safari camps.',
       groupSize: '2-12 People',
       price: '$1,999',
       link: '/visit/serengeti-safari',
-      featured: true,
+      featured: false,
     },
     {
       id: 2,
       image: 'https://images.pexels.com/photos/1010657/pexels-photo-1010657.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Cape Town City Experience',
       location: 'South Africa',
-      duration: '5 Days',
+      duration: 'Discover the charm of South African\'s Mother city. Explore Table Mountain, the V&A waterfront, and vibrant local culture with guided tours and scenic coastal drives.',
       groupSize: '2-8 People',
       price: '$1,499',
       link: '/visit/cape-town',
@@ -35,7 +35,7 @@ const FeaturedDestinations = () => {
       image: 'https://images.pexels.com/photos/3889843/pexels-photo-3889843.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       title: 'Marrakech Cultural Tour',
       location: 'Morocco',
-      duration: '6 Days',
+      duration: 'Step into the heart of Morocco with this rich cultural tour. Wander bustling souks, visit historic palaces, and experience authentic Moroccan cuisine and traditions.',
       groupSize: '2-10 People',
       price: '$1,299',
       link: '/visit/marrakech',
@@ -50,9 +50,10 @@ const FeaturedDestinations = () => {
           title={t('home.featured.title')}
           subtitle={t('home.featured.subtitle')}
         />
-        
+        <Link to="/contact">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {destinations.map((destination) => (
+            
             <PackageCard 
               key={destination.id}
               image={destination.image}
@@ -66,7 +67,7 @@ const FeaturedDestinations = () => {
             />
           ))}
         </div>
-        
+        </Link>
         <motion.div 
           className="mt-12 text-center"
           initial={{ opacity: 0 }}

@@ -11,7 +11,7 @@ const StudyPage = () => {
       id: 'undergraduate',
       icon: <GraduationCap size={28} />,
       title: t('study.programs.undergraduate'),
-      description: "Bachelor&#39;s degree programs across various disciplines at leading African universities.",
+      description: "Bachelors degree programs across various disciplines at leading African universities.",
     },
     {
       id: 'graduate',
@@ -163,11 +163,11 @@ const StudyPage = () => {
       <section className="py-16 bg-white">
         <div className="container">
           <SectionTitle 
-            title="Partner Universities"
+            title="Universities"
             subtitle="We work with top institutions across Africa to provide quality education"
           />
           
-          <div className="flex flex-wrap justify-center gap-8 items-center">
+          <div className="flex animate-[scroll_30s_linear_infinite] space-x-16 overflow-hidden">
             <div className="w-40 h-24 bg-neutral-100 rounded-lg flex items-center justify-center p-4">
               <div className="text-center font-bold">University of Cape Town</div>
             </div>

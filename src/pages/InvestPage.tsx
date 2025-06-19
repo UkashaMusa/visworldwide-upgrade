@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/common/SectionTitle';
 import { Building, Leaf, Cpu, Plane, Factory, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const InvestPage = () => {
   const { t } = useTranslation();
@@ -100,9 +101,11 @@ const InvestPage = () => {
             <p className="text-xl mb-8 text-neutral-100">
               {t('invest.hero.subtitle')}
             </p>
+            <Link to='/contact'>
             <button className="btn btn-primary">
               {t('common.start')}
             </button>
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -125,9 +128,7 @@ const InvestPage = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{sector.title}</h3>
                   <p className="text-neutral-600 mb-4">{sector.description}</p>
-                  <a href="#" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-700">
-                    Learn More <ChevronRight size={16} className="ml-1" />
-                  </a>
+                   
                 </div>
               </motion.div>
             ))}
@@ -158,7 +159,7 @@ const InvestPage = () => {
                     {step.id}
                   </div>
                   {index < processSteps.length - 1 && (
-                    <div className="h-full w-0.5 bg-primary-200 mx-auto mt-2"></div>
+                    <div className="h-full w-0.5 bg-primary-600 mx-auto mt-2"></div>
                   )}
                 </div>
                 <div className="pt-2">
@@ -194,11 +195,9 @@ const InvestPage = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">Farm Products Expansion</h3>
                 <p className="text-neutral-600 mb-4">
-                  We helped a US-based company specializing in animal vitamins and farm products establish operations in multiple African countries, creating a sustainable supply chain and local employment.
+                  We helped a Peruvian-based company specializing in animal vitamins and farm products establish operations in multiple African countries, creating a sustainable supply chain and local employment.
                 </p>
-                <a href="#" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-700">
-                  Read Full Case Study <ChevronRight size={16} className="ml-1" />
-                </a>
+                  
               </div>
             </motion.div>
             
@@ -218,9 +217,7 @@ const InvestPage = () => {
                 <p className="text-neutral-600 mb-4">
                   We facilitated the African expansion of a leading educational technology company, helping them navigate regulatory requirements and establish partnerships with local institutions.
                 </p>
-                <a href="#" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-700">
-                  Read Full Case Study <ChevronRight size={16} className="ml-1" />
-                </a>
+                 
               </div>
             </motion.div>
           </div>

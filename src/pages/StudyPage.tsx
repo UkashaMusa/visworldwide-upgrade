@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/common/SectionTitle';
 import { GraduationCap, BookOpen, Briefcase, Book, Languages, FileCheck, Plane, Home, Globe, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const StudyPage = () => {
   const { t } = useTranslation();
@@ -100,9 +101,11 @@ const StudyPage = () => {
             <p className="text-xl mb-8 text-neutral-100">
               {t('study.hero.subtitle')}
             </p>
+            <Link to='/contact'>
             <button className="btn btn-primary">
               {t('common.apply')}
             </button>
+            </Link>
           </motion.div>
         </div>
       </section>

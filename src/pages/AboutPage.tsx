@@ -8,10 +8,10 @@ const AboutPage = () => {
 
   const teamMembers = [
     {
-      name: 'Anass Aboubakar Ousmane',
+      name: 'Anass Aboubakar',
       role: 'Founder & CEO',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Anass has over 15 years of experience in international business and tourism across Africa.',
+      bio: 'Anass has over 15+ years of experience in international business and tourism across Africa.',
     },
     {
       name: 'Musa Ukasha',
@@ -20,11 +20,23 @@ const AboutPage = () => {
       bio: 'Ukasha specializes in facilitating investments in emerging markets with a focus on sustainable development.',
     },
     {
-      name: 'Muhammad Auwal Y',
-      role: 'Education Consultant',
+      name: `Muhammad Yakumut`,
+      role: 'Education & Tourism Consultant',
       image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
     },
+     {
+      name: ' Firmin Ngendahimana',
+      role: 'Business & import Director',
+      image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
+    },
+    //   {
+    //   name: ' Henriette Niyonkuru',
+    //   role: 'Products',
+    //   image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+    //   bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
+    // },
    
   ];
 
@@ -143,10 +155,10 @@ const AboutPage = () => {
         <div className="container">
           <SectionTitle 
             title="Meet Our Team"
-            subtitle="The passionate professionals behind VisAfrica"
+            subtitle="The passionate professionals behind Visworldwide"
           />
           {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 */}
-          <div className="flex flex-col sm:flex-col md:flex-col lg:flex-row xl:flex-row items-center justify-center gap-4 sm:gap-6 md:gap-8 lg:gap-10 p-4 sm:p-6 lg:p-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             {teamMembers.map((member, index) => (
               <motion.div 
                 key={index}
@@ -157,13 +169,13 @@ const AboutPage = () => {
                 transition={{ delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
               >
-                <div className="h-64 overflow-hidden">
-                  <img 
+                {/* <div className="h-64 overflow-hidden">
+                  {<img 
                     src={member.image} 
                     alt={member.name} 
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </div> */} 
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
                   <p className="text-primary-600 font-medium mb-3">{member.role}</p>

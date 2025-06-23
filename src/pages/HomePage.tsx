@@ -6,6 +6,7 @@ import TestimonialsSection from '../components/home/TestimonialsSection';
 import CtaSection from '../components/home/CtaSection';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import Partnaship from './Partnaship';
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -27,6 +28,7 @@ const HomePage = () => {
         <ServicesSection />
         <FeaturedDestinations />
         <TestimonialsSection />
+        <Partnaship />
         <CtaSection />
       </motion.div>
     </>

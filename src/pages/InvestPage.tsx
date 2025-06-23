@@ -11,35 +11,36 @@ const InvestPage = () => {
     {
       id: 'agriculture',
       icon: <Leaf size={36} />,
-      title: t('invest.sectors.agriculture'),
+      title: 'Product Marketing & Distributions' ,//t('invest.sectors.agriculture')
       color: 'bg-green-100 text-green-700',
       description: "Africa has 60% of the world's uncultivated arable land, presenting vast opportunities in farming, agro-processing, and agricultural technology.",
     },
     {
-      id: 'tech',
+      id: 'Import of Products',
       icon: <Cpu size={36} />,
-      title: t('invest.sectors.tech'),
+      title: 'Import of Products',// t('invest.sectors.tech')
       color: 'bg-blue-100 text-blue-700',
       description: "The continent's tech ecosystem is growing rapidly with opportunities in fintech, e-commerce, and digital infrastructure.",
     },
     {
-      id: 'energy',
+      id: 'Products Registration',
       icon: <svg xmlns="http://www.w3.org/2000/svg\" width="36\" height="36\" viewBox="0 0 24 24\" fill="none\" stroke="currentColor\" strokeWidth="2\" strokeLinecap="round\" strokeLinejoin="round\" className="lucide"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg>,
-      title: t('invest.sectors.energy'),
+      title: 'Products Registration', //t('invest.sectors.energy')
       color: 'bg-yellow-100 text-yellow-700',
       description: 'With abundant sunshine and wind resources, renewable energy presents significant investment opportunities across the continent.',
     },
+    // {
+    //   id: 'tourism',
+    //   icon: <Plane size={36} />,
+    //   title: t('invest.sectors.tourism'),
+    //   color: 'bg-purple-100 text-purple-700',
+    //   description: "Africa's diverse landscapes, wildlife, and cultural heritage create opportunities in hospitality, eco-tourism, and adventure travel.",
+    // },
+    
     {
-      id: 'tourism',
-      icon: <Plane size={36} />,
-      title: t('invest.sectors.tourism'),
-      color: 'bg-purple-100 text-purple-700',
-      description: "Africa's diverse landscapes, wildlife, and cultural heritage create opportunities in hospitality, eco-tourism, and adventure travel.",
-    },
-    {
-      id: 'manufacturing',
+      id: 'Market Study',
       icon: <Factory size={36} />,
-      title: t('invest.sectors.manufacturing'),
+      title: 'Market Study' ,//t('invest.sectors.manufacturing')
       color: 'bg-red-100 text-red-700',
       description: 'Growing consumer markets and regional integration are creating opportunities in manufacturing across various industries.',
     },

@@ -80,8 +80,8 @@ export default {
       subtitle: 'Business opportunities across the continent',
     },
     sectors: {
-      title: 'Investment Sectors',
-      agriculture: 'Agriculture',
+      title: `Investor's Business Kit`,
+      agriculture: 'Agro Products',
       tech: 'Technology',
       energy: 'Renewable Energy',
       tourism: 'Tourism',

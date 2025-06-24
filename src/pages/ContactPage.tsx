@@ -208,16 +208,7 @@ const ContactPage = () => {
               viewport={{ once: true }}
               className="h-[400px] bg-neutral-200 rounded-xl overflow-hidden"
             >
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.331832338966!2d36.80943243771!3d-1.2833537081621001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10be32c63c7d%3A0x76f53d6bcd4f9ce0!2sNairobi%20City%2C%20Kenya!5e0!3m2!1sen!2sus!4v1653385422249!5m2!1sen!2sus" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen="" 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-                title="VisAfrica Office Location"
-              ></iframe>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d992879.9219083878!2d30.1006848!3d-1.9660800000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca6af921f1347%3A0x807f3d177233c34f!2sKG%20549%20St%2C%20Kigali!5e1!3m2!1sen!2srw!4v1750780196675!5m2!1sen!2srw" width="100%" height="100%"></iframe>
             </motion.div>
           </div>
         </div>

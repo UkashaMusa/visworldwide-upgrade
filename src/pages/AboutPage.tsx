@@ -68,12 +68,10 @@ const AboutPage = () => {
             >
               <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
               <p className="text-neutral-600 mb-4">
-                VisAfrica was founded in 2015 with a vision to connect the world to the vast opportunities that Africa offers. What began as a small travel agency has evolved into a comprehensive service provider facilitating travel, investment, and education across the continent.
+               As one of <a href='https://edugalitech.rw' className=' text-blue-900 underline decoration-blue-900' target='_blank'><i>Edugalitech.rw</i> </a> core projects in Africa, VISAfrica is launched in 2020 with the aim to connect America and Asia to the vast opportunities that Africa offers.
 
-                <br/>
-                
-                <i>Today, we operate in over 15 African countries and have helped thousands of clients discover new experiences, establish successful businesses, and pursue quality education in Africa.
-  </i>  
+                <br/> 
+                <i>Our founder's extensive experience in international business is channelled to his relationship to make sure foreign brands penetrate and conquer the African market.</i>  
               </p>
               <p className="text-neutral-600 mb-4">
                 <h3>Vision</h3>

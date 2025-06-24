@@ -119,7 +119,7 @@ export default {
   },
   footer: {
     rights: 'All Rights Reserved',
-    terms: 'Edugalitech Conference',
+    terms: 'Edugalitech Conferences',
     privacy: 'Privacy Policy',
     cookies: 'Cookie Policy',
   },

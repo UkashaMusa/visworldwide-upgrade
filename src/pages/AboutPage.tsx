@@ -11,7 +11,7 @@ const AboutPage = () => {
       name: 'Anass Aboubakar',
       role: 'Founder & CEO',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Anass has over 15+ years of experience in international business and tourism across Africa.',
+      bio: 'Anass has over 15+ years of experience in international business and tourism across Africa & America.',
     },
     {
       name: 'Musa Ukasha',
@@ -19,18 +19,20 @@ const AboutPage = () => {
       image: 'https://images.pexels.com/photos/3760514/pexels-photo-3760514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       bio: 'Ukasha specializes in facilitating investments in emerging markets with a focus on sustainable development.',
     },
+     {
+      name: ' Firmin Ngendahimana',
+      role: 'Business & Import Director',
+      image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
+    },
+
     {
       name: `Muhammad Yakumut`,
       role: 'Education & Tourism Consultant',
       image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
     },
-     {
-      name: ' Firmin Ngendahimana',
-      role: 'Business & import Director',
-      image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
-    },
+    
     //   {
     //   name: ' Henriette Niyonkuru',
     //   role: 'Products',
@@ -46,7 +48,7 @@ const AboutPage = () => {
       <section className="bg-gradient-to-r from-indigo-300 via-blue-300 to-indigo-300 pt-32 pb-16 bg-neutral-50">
         <div className="container ">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="mb-4">About Visworldwide</h1>
+            <h1 className="mb-4">About VisAfrica</h1>
             <p className="text-xl text-neutral-600">
               Your trusted partner for exploring opportunities across Africa through travel, investment, and education.
             </p>
@@ -65,14 +67,21 @@ const AboutPage = () => {
             >
               <h2 className="text-3xl font-semibold mb-6">Our Story</h2>
               <p className="text-neutral-600 mb-4">
-                Visworldwide was founded in 2020 with a vision to connect the world to the vast opportunities that Africa offers. What began as a small travel agency has evolved into a comprehensive service provider facilitating travel, investment, and education across the continent.
+                VisAfrica was founded in 2015 with a vision to connect the world to the vast opportunities that Africa offers. What began as a small travel agency has evolved into a comprehensive service provider facilitating travel, investment, and education across the continent.
+
+                <br/>
+                
+                <i>Today, we operate in over 15 African countries and have helped thousands of clients discover new experiences, establish successful businesses, and pursue quality education in Africa.
+  </i>  
               </p>
               <p className="text-neutral-600 mb-4">
-                Our founder's extensive experience in international business and passion for showcasing Africa's potential led to the creation of a platform that breaks down barriers and opens doors for individuals and organizations looking to engage with African countries.
+                <h3>Vision</h3>
+                We envision to be your VISA to enable you Visit, Invest & Study in Africa while saving resources
               </p>
               <p className="text-neutral-600">
-                Today, we operate in over 15 African countries and have helped thousands of clients discover new experiences, establish successful businesses, and pursue quality education in Africa.
-              </p>
+                <h3>Mission</h3>
+                Our primary mission is to make sure you travel study and do business worry-free. <br/>
+                  </p>
             </motion.div>
             
             <motion.div
@@ -83,7 +92,7 @@ const AboutPage = () => {
             >
               <img 
                 src="https://images.pexels.com/photos/2265876/pexels-photo-2265876.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Visworldwide team" 
+                alt="VisAfrica team" 
                 className="w-full h-full object-cover"
               />
             </motion.div>
@@ -155,7 +164,7 @@ const AboutPage = () => {
         <div className="container">
           <SectionTitle 
             title="Meet Our Team"
-            subtitle="The passionate professionals behind Visworldwide"
+            subtitle="The passionate professionals behind VisAfrica"
           />
           {/* grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">

@@ -3,23 +3,23 @@
 const TestimonialsSection = () => {
   const testimonials = [
     {
-      name: "Dr. Sarah Johnson",
-      title: "Director, International Health Summit",
-      content: "Edugalitech made our 3-day international summit flawless. Their interpretation services were exceptional, and Rwanda proved to be the perfect venue for bringing together delegates from 40+ countries.",
+      name: "Dr. Francesca Turner",
+      title: "entiendo de trabajo.. ahora no tengo jaja mejor dejar fuera",
+      content: "My solo trip with Edugalitech to Rwanda was exceptional. I had the chance to experience the local culture, visit museums, explore the breathtaking Akagera National Park and Nyungwe National Park. They also took me to see the local markets to buy coffee, tea and local artisan products. I highly recommend their services if you want to explore all of Rwanda's beauty.",
       rating: 5,
       company: "Global Health Alliance"
     },
     {
       name: "Pierre Dubois",
       title: "CEO, African Development Conference",
-      content: "The professionalism and attention to detail from the Edugalitech team exceeded our expectations. The simultaneous interpretation was seamless across French, English, and Kinyarwanda.",
+      content: "The professionalism and attention to detail from the VisAfrica team exceeded our expectations. The simultaneous interpretation was seamless across French, English, and Kinyarwanda.",
       rating: 5,
       company: "ADC Group"
     },
     {
       name: "Maria Santos",
       title: "Event Manager, UN Regional Meeting",
-      content: "Outstanding service from planning to execution. The team's local knowledge of Rwanda combined with international standards made our UN regional meeting a tremendous success.",
+      content: "Outstanding service from planning to execution. The team's local knowledge of Africa combined with international standards made our UN regional meeting a tremendous success.",
       rating: 5,
       company: "United Nations"
     },

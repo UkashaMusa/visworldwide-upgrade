@@ -6,30 +6,59 @@ import SectionTitle from '../components/common/SectionTitle';
 import { ToastContainer, toast } from 'react-toastify'; 
 
 const ContactPage = () => {
-  const { t } = useTranslation();                     
+  const { t } = useTranslation(); 
+                   
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: ""
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
+  
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Form submission logic would go here
-    console.log('Form submitted:', formData);
-    toast('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
+  if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+    toast.error("Please fill in all fields before submitting.");
+  }else{
+    toast.success("Thank you for reaching out! We'll get back to you within 24 hours.");
+  }
+
+   try {
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        access_key: "11aa113e-e657-45ee-9dd5-e2b56039a2d6",
+        subject: `New Inquiry from VisAfrica.rw: ${formData.name}`,
+        name: formData.name,
+        email: formData.email,
+        company: formData.subject,
+        message: formData.message
+      })
     });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: ""
+      });
+    } else {
+      toast.error("Submission failed. Please try again.");
+    }
+  } catch (error) {
+    toast.error("Network error. Please try again later.");
+  }
+};
+  const handleChange = (field: string, value: string) => {
+    setFormData(prev => ({ ...prev, [field]: value }));
   };
 
   const contactInfo = [
@@ -117,7 +146,7 @@ const ContactPage = () => {
                       id="name"
                       name="name"
                       value={formData.name}
-                      onChange={handleChange}
+                      onChange={(e) => handleChange("name", e.target.value)}
                       required
                       className="w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
@@ -131,7 +160,7 @@ const ContactPage = () => {
                       id="email"
                       name="email"
                       value={formData.email}
-                      onChange={handleChange}
+                      onChange={(e) => handleChange("email", e.target.value)}
                       required
                       className="w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                     />
@@ -146,7 +175,7 @@ const ContactPage = () => {
                     id="subject"
                     name="subject"
                     value={formData.subject}
-                    onChange={handleChange}
+                    onChange={(e) => handleChange("subject", e.target.value)}
                     required
                     className="w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"
                   />
@@ -159,7 +188,7 @@ const ContactPage = () => {
                     id="message"
                     name="message"
                     value={formData.message}
-                    onChange={handleChange}
+                    onChange={(e) => handleChange("message", e.target.value)}
                     required
                     rows={5}
                     className="w-full p-3 rounded-lg border border-neutral-300 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent"

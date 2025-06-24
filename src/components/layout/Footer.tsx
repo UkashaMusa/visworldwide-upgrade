@@ -73,7 +73,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#" className="text-neutral-300 hover:text-primary-400 transition-colors">
+                <Link to="https://edugalitech.rw" target='_blank' className="text-neutral-300 hover:text-primary-400 transition-colors">
                   {t('footer.terms')}
                 </Link>
               </li>
@@ -101,8 +101,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={20} className="text-primary-400 mr-2 flex-shrink-0" />
-                <a href="mailto:info@visafrica.com" className="text-neutral-300 hover:text-primary-400 transition-colors">
-                  info@visworldwide.com
+                <a href="mailto:info@visafrica.rw" className="text-neutral-300 hover:text-primary-400 transition-colors">
+                  info@visafrica.rw
                 </a>
               </li>
             </ul>
@@ -115,12 +115,12 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-neutral-800 text-neutral-400 text-sm flex flex-col md:flex-row justify-between items-center">
           <p>
-            &copy; {currentYear} VisWorldwide. {t('footer.rights')}
+            &copy; {currentYear - 10} VisAfrica. {t('footer.rights')}
           </p>
           <div className="flex mt-4 md:mt-0 space-x-4">
-            <Link to="#" className="hover:text-primary-400 transition-colors">
+            {/* <Link to="#" className="hover:text-primary-400 transition-colors">
               {t('footer.terms')}
-            </Link>
+            </Link> */}
             <Link to="#" className="hover:text-primary-400 transition-colors">
               {t('footer.privacy')}
             </Link>

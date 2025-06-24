@@ -23,7 +23,7 @@ const AboutPage = () => {
       name: ' Firmin Ngendahimana',
       role: 'Business & Import Director',
       image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
+      bio: 'Firmin has guided numerous businesses through successful international trade and import strategies.',
     },
 
     {
@@ -33,7 +33,8 @@ const AboutPage = () => {
       bio: 'Muhammad has helped hundreds of students navigate international education opportunities.',
     },
     
-    //   {
+    //   {Sure! Here's a description that matches the tone and structure of the one provided:
+
     //   name: ' Henriette Niyonkuru',
     //   role: 'Products',
     //   image: 'https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',

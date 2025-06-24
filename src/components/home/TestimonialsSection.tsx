@@ -23,20 +23,7 @@ const TestimonialsSection = () => {
       rating: 5,
       company: "United Nations"
     },
-    {
-      name: "James Thompson",
-      title: "Conference Director, Tech Summit Africa",
-      content: "The technical expertise and seamless coordination provided by Edugalitech was impressive. Every aspect of our multi-day technology conference was handled with utmost professionalism.",
-      rating: 5,
-      company: "Tech Summit Africa"
-    },
-    {
-      name: "Dr. Amina Hassan",
-      title: "Regional Coordinator, African Union",
-      content: "Exceptional interpretation services that bridged language barriers effortlessly. The team's cultural sensitivity and technical excellence made our AU regional meeting highly successful.",
-      rating: 5,
-      company: "African Union"
-    }
+
   ];
 
   return (

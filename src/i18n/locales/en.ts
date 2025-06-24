@@ -4,9 +4,9 @@ export default {
     learnMore: 'Learn More',
     viewAll: 'View All',
     readMore: 'Read More',
-    apply: 'Apply Now',
-    book: 'Plan your Trip',
-    start: 'Start Your Investment',
+    apply: 'Study in Africa',
+    book: 'Visit Africa',
+    start: 'Do Business in Africa',
     contact: 'Contact Us',
   },
   nav: {
@@ -14,14 +14,13 @@ export default {
     visit: 'Visit',
     invest: 'Invest',
     study: 'Study',
-    blog: 'Blog',
     about: 'About',
     contact: 'Contact',
   },
   home: {
     hero: {
-      title: 'Your Gateway to the World',
-      subtitle: 'Visit, Invest, Study — Explore Opportunities Across Continents, Custom journeys to visit, invest, or study anywhere on Earth.',
+      title:'Access the African Ecosystem',
+      subtitle: 'Here is your #VISA to Visit, Invest and Study in Africa worry-free!',
       cta: 'Discover Our Services',
     },
     services: {

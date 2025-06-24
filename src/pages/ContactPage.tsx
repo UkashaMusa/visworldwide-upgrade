@@ -3,9 +3,10 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import SectionTitle from '../components/common/SectionTitle';
+import { ToastContainer, toast } from 'react-toastify'; 
 
 const ContactPage = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation();                     
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +23,7 @@ const ContactPage = () => {
     e.preventDefault();
     // Form submission logic would go here
     console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
+    toast('Thank you for your message! We will get back to you soon.');
     setFormData({
       name: '',
       email: '',
@@ -46,8 +47,8 @@ const ContactPage = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email Address',
-      details: 'info@visworldwide.com',
-      link: 'mailto:info@visworldwide.com',
+      details: 'info@visafrica.rw',
+      link: 'mailto:info@visafrica.rw',
     },
   ];
 
@@ -69,6 +70,7 @@ const ContactPage = () => {
       <section className="py-16 bg-white">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+           
             {contactInfo.map((info, index) => (
               <motion.div 
                 key={index}
@@ -252,6 +254,7 @@ const ContactPage = () => {
                   Yes, we can create customized travel packages tailored to your preferences, budget, and timeframe. Contact our team with your requirements, and we'll design a personalized itinerary for you.
                 </p>
               </motion.div>
+               <ToastContainer />
             </div>
           </div>
         </div>

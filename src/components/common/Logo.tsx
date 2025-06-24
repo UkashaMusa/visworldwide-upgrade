@@ -11,7 +11,7 @@ const Logo: React.FC<LogoProps> = ({ dark = false }) => {
       <img
         src={visa}
         alt="logo"
-        className={`text-primary-600  h-14 ${dark ? 'fill-neutral-900' : ''}`} 
+        className={`text-primary-600  h-20 ${dark ? 'fill-neutral-900' : ''}`} 
       />
       <span className={`ml-2 text-xl font-heading font-bold ${dark ? 'text-white' : ''}`}>
        

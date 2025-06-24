@@ -4,9 +4,9 @@ export default {
     learnMore: 'Más Información',
     viewAll: 'Ver Todo',
     readMore: 'Leer Más',
-    apply: 'Aplicar Ahora',
-    book: 'Reservar un Paquete',
-    start: 'Iniciar Su Inversión',
+    apply: 'Estudiar en África',
+    book: 'Viajar a África',
+    start: 'Emprender en África',
     contact: 'Contáctenos',
   },
   nav: {
@@ -20,9 +20,9 @@ export default {
   },
   home: {
     hero: {
-      title: 'Su Puerta de Entrada a África',
-      subtitle: 'Visitar, Invertir, Estudiar - Explore Oportunidades en Todo el Continente',
-      cta: 'Descubra Nuestros Servicios',
+      title: 'El Acceso al Ecosistema Africano',
+      subtitle: 'Somos su #VISA para Visitar, Invertir y Estudiar en África!',
+      cta: 'Ver Nuestros Servicios',
     },
     services: {
       title: 'Nuestros Servicios',

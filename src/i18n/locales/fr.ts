@@ -4,9 +4,9 @@ export default {
     learnMore: 'En Savoir Plus',
     viewAll: 'Voir Tout',
     readMore: 'Lire Plus',
-    apply: 'Postuler Maintenant',
-    book: 'Réserver un Forfait',
-    start: 'Commencer Votre Investissement',
+    apply: 'Etudier en Afrique',
+    book: 'Visiter l\'Afrique',
+    start: 'Entreprendre en Afrique',
     contact: 'Contactez-Nous',
   },
   nav: {
@@ -20,8 +20,8 @@ export default {
   },
   home: {
     hero: {
-      title: 'Votre Passerelle vers l\'Afrique',
-      subtitle: 'Visiter, Investir, Étudier - Explorez les Opportunités à Travers le Continent',
+      title: 'Votre Accès à l\'Écosystème Africain',
+      subtitle: 'Pour Visiter, Investir et Étudier en Afrique à votre convenance!',
       cta: 'Découvrez Nos Services',
     },
     services: {

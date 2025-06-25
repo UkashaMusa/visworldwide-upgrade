@@ -1,9 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import SectionTitle from '../components/common/SectionTitle';
-import { Building, Leaf, Cpu, Plane, Factory, ChevronRight } from 'lucide-react';
+import {  Leaf, Cpu,  Factory } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+import peruvian from '../asset/peruvianbanner.jpg'; // Adjust the import based on your images structure
+import event from '../asset/event.jpg'; // Adjust the import based on your images structure
 const InvestPage = () => {
   const { t } = useTranslation();
 
@@ -13,19 +14,19 @@ const InvestPage = () => {
     {
       id: 'Market Study',
       icon: <Factory size={36} />,
-      title: 'Market Study' ,//t('invest.sectors.manufacturing')
+      title: 'Market Study',//t('invest.sectors.manufacturing')
       color: 'bg-red-100 text-red-700',
       description: 'Analyze market trends and consumer behavior to identify business opportunities across industries.',
     },
-     {
+    {
       id: 'Products Registration',
-      icon: <svg xmlns="http://www.w3.org/2000/svg\" width="36\" height="36\" viewBox="0 0 24 24\" fill="none\" stroke="currentColor\" strokeWidth="2\" strokeLinecap="round\" strokeLinejoin="round\" className="lucide"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z"/><path d="m7 16.5-4.74-2.85"/><path d="m7 16.5 5-3"/><path d="M7 16.5v5.17"/><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z"/><path d="m17 16.5-5-3"/><path d="m17 16.5 4.74-2.85"/><path d="M17 16.5v5.17"/><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z"/><path d="M12 8 7.26 5.15"/><path d="m12 8 4.74-2.85"/><path d="M12 13.5V8"/></svg>,
+      icon: <svg xmlns="http://www.w3.org/2000/svg\" width="36\" height="36\" viewBox="0 0 24 24\" fill="none\" stroke="currentColor\" strokeWidth="2\" strokeLinecap="round\" strokeLinejoin="round\" className="lucide"><path d="M2.97 12.92A2 2 0 0 0 2 14.63v3.24a2 2 0 0 0 .97 1.71l3 1.8a2 2 0 0 0 2.06 0L12 19v-5.5l-5-3-4.03 2.42Z" /><path d="m7 16.5-4.74-2.85" /><path d="m7 16.5 5-3" /><path d="M7 16.5v5.17" /><path d="M12 13.5V19l3.97 2.38a2 2 0 0 0 2.06 0l3-1.8a2 2 0 0 0 .97-1.71v-3.24a2 2 0 0 0-.97-1.71L17 10.5l-5 3Z" /><path d="m17 16.5-5-3" /><path d="m17 16.5 4.74-2.85" /><path d="M17 16.5v5.17" /><path d="M7.97 4.42A2 2 0 0 0 7 6.13v4.37l5 3 5-3V6.13a2 2 0 0 0-.97-1.71l-3-1.8a2 2 0 0 0-2.06 0l-3 1.8Z" /><path d="M12 8 7.26 5.15" /><path d="m12 8 4.74-2.85" /><path d="M12 13.5V8" /></svg>,
       title: 'Products Registration', //t('invest.sectors.energy')
       color: 'bg-yellow-100 text-yellow-700',
       description: 'Get professional assistance in registering your products for legal compliance and market entry.',
     },
 
-     {
+    {
       id: 'Import of Products',
       icon: <Cpu size={36} />,
       title: 'Import of Products',// t('invest.sectors.tech')
@@ -35,12 +36,12 @@ const InvestPage = () => {
     {
       id: 'products marketing and distributions',
       icon: <Leaf size={36} />,
-      title: 'Product Marketing & Distributions' ,//t('invest.sectors.agriculture')
+      title: 'Product Marketing & Distributions',//t('invest.sectors.agriculture')
       color: 'bg-green-100 text-green-700',
       description: "Promote and distribute your products effectively across diverse African markets.",
     },
-   
-   
+
+
     // {
     //   id: 'tourism',
     //   icon: <Plane size={36} />,
@@ -48,8 +49,8 @@ const InvestPage = () => {
     //   color: 'bg-purple-100 text-purple-700',
     //   description: "Africa's diverse landscapes, wildlife, and cultural heritage create opportunities in hospitality, eco-tourism, and adventure travel.",
     // },
-    
-    
+
+
   ];
 
   const processSteps = [
@@ -109,9 +110,9 @@ const InvestPage = () => {
               {t('invest.hero.subtitle')}
             </p>
             <Link to='/contact'>
-            <button className="btn btn-primary">
-              {t('common.start')}
-            </button>
+              <button className="btn btn-primary">
+                {t('common.start')}
+              </button>
             </Link>
           </motion.div>
         </div>
@@ -121,10 +122,10 @@ const InvestPage = () => {
       <section className="py-16 bg-white">
         <div className="container">
           <SectionTitle title={t('invest.sectors.title')} />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {sectors.map((sector) => (
-              <motion.div 
+              <motion.div
                 key={sector.id}
                 className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow"
                 whileHover={{ y: -5 }}
@@ -135,7 +136,7 @@ const InvestPage = () => {
                   </div>
                   <h3 className="text-xl font-semibold mb-3">{sector.title}</h3>
                   <p className="text-neutral-600 mb-4">{sector.description}</p>
-                   
+
                 </div>
               </motion.div>
             ))}
@@ -146,14 +147,14 @@ const InvestPage = () => {
       {/* Investment Process */}
       <section className="py-16 bg-neutral-50">
         <div className="container">
-          <SectionTitle 
+          <SectionTitle
             title={t('invest.process.title')}
             subtitle="Our systematic approach to facilitating your investment in Africa"
           />
-          
+
           <div className="max-w-4xl mx-auto">
             {processSteps.map((step, index) => (
-              <motion.div 
+              <motion.div
                 key={step.id}
                 className="flex mb-12 last:mb-0"
                 initial={{ opacity: 0, x: -20 }}
@@ -182,49 +183,52 @@ const InvestPage = () => {
       {/* Success Stories */}
       <section className="py-16 bg-white">
         <div className="container">
-          <SectionTitle 
+          <SectionTitle
             title="Success Stories"
             subtitle="See how we've helped businesses thrive in Africa"
           />
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <motion.div 
+            <motion.div
               className="bg-white rounded-xl shadow-md overflow-hidden"
               whileHover={{ y: -5 }}
             >
               <div className="h-64 overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Agricultural investment" 
+                <img
+                  src={peruvian}
+                  alt="Agricultural investment"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3">Farm Products Expansion</h3>
+                <h3 className="text-xl font-semibold mb-3">Registration,Importation and Distribution of Veterinary</h3>
                 <p className="text-neutral-600 mb-4">
-                  We helped a Peruvian-based company specializing in animal vitamins and farm products establish operations in multiple African countries, creating a sustainable supply chain and local employment.
+                  We represented tremendous foreign companies in Africa including <a href='https://www.peruvianpharmaceutical.com' target='_blank' className='underline decoration-green-700 text-green-700'> Peruvian Pharmaceutical</a>  by establishing operations in multiple African countries, creating a sustainable supply chain and local employment.
+
                 </p>
-                  
+
               </div>
             </motion.div>
-            
-            <motion.div 
+
+            <motion.div
               className="bg-white rounded-xl shadow-md overflow-hidden"
               whileHover={{ y: -5 }}
             >
               <div className="h-64 overflow-hidden">
-                <img 
-                  src="https://images.pexels.com/photos/9875441/pexels-photo-9875441.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Tech investment" 
+                <img
+                  src={ event}
+                  alt="Tech investment"
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3">EdTech Platform Launch</h3>
+                <h3 className="text-xl font-semibold mb-3">Event Planning and Management</h3>
                 <p className="text-neutral-600 mb-4">
-                  We facilitated the African expansion of a leading educational technology company, helping them navigate regulatory requirements and establish partnerships with local institutions.
+
+                  Our highly qualified team successfully provided interpretation, logistics and equipment for world-class organizations and government institutions in several countries in Africa and America.
+
                 </p>
-                 
+
               </div>
             </motion.div>
           </div>

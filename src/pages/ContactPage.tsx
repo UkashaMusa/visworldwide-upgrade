@@ -76,15 +76,15 @@ const ContactPage = () => {
     {
       icon: <Mail size={24} />,
       title: 'Email Address',
-      details: 'info@visafrica.rw',
-      link: 'mailto:info@visafrica.rw',
+      details: 'edugalitech@gmail.com',
+      link: 'mailto:edugalitech@gmail.com',
     },
   ];
 
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-300 via-blue-300 to-indigo-300 pt-32 pb-16 bg-neutral-50">
+      <section className="bg-gradient-to-r from-gray-300 via-gray-300 to-gray-300 pt-32 pb-16 bg-neutral-50">
         <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="mb-4">Contact Us</h1>

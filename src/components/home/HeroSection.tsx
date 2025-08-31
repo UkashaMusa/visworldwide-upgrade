@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { herobanner } from '../../asset/images';
 
 const HeroSection = () => {
   const { t } = useTranslation();
@@ -11,7 +12,7 @@ const HeroSection = () => {
       {/* Background Image :https://images.pexels.com/photos/4577810/pexels-photo-4577810.jpeg?auto=compress&cs=tinysrgb&w=1920*/}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://lh3.googleusercontent.com/gps-cs-s/AC9h4nrG9SkpgVoeqwriVEiTrWEvKHZjfGyJESOb7Qj_3jgagicx_24bmA1Et-k_ldEuo-YHOpioKq9mg2uTtsgzOxJ4-Hr-7IK8FkaIoVywGjspVisjNzvuv67g0vG1GFqORnSncMnN=s680-w680-h510"
+          src={herobanner}
           alt="African landscape"
           className="w-full h-full object-cover"
         />
